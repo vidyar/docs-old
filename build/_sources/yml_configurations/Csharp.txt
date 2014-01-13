@@ -1,6 +1,6 @@
-:title: Hello world example
-:description: A simple hello world example with Docker
-:keywords: docker, example, hello world
+:title: Csharp yml configuration
+:description: yml file explanation
+:keywords: yml,Csharp
 
 **Csharp:**
 
@@ -26,10 +26,10 @@ sample shippable.yml file for csharp is given below :
 .. code-block:: bash
 
 language: csharp
-csharp:
-     - dotNet40
-build_environment: win2012
-before_install: msbuild Shouldly.sln
+ csharp:
+-    " - dotNet40"
+- build_environment: win2012
+- before_install: msbuild Shouldly.sln
 
 Specify the version numbers and frameworks that you have used to build and run your project in the shippable.yml file.
 

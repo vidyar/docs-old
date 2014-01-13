@@ -64,15 +64,15 @@
 <div class="highlight-bash"><div class="highlight"><pre>
 </pre></div>
 </div>
-<p>language: csharp
-csharp:</p>
-<blockquote>
-<div><ul class="simple">
-<li>dotNet40</li>
+<dl class="docutils">
+<dt>language: csharp</dt>
+<dd>csharp:</dd>
+</dl>
+<ul class="simple">
+<li>&#8221; - dotNet40&#8221;</li>
+<li>build_environment: win2012</li>
+<li>before_install: msbuild Shouldly.sln</li>
 </ul>
-</div></blockquote>
-<p>build_environment: win2012
-before_install: msbuild Shouldly.sln</p>
 <p>Specify the version numbers and frameworks that you have used to build and run your project in the shippable.yml file.</p>
 <p>Keep the test outputs in shippable/testresults and output of codecoverage in shippable/codecoverage folder to get the reports parsed.Otherwise you will not find the reports in our CI.</p>
 <p>Please refer the csharp-buildsample example for more details.</p>
