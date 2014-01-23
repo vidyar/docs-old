@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Java: &mdash; sample-docs 3.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="sample-docs 3.0 documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="java">
+<h1>Java:<a class="headerlink" href="#java" title="Permalink to this headline">¶</a></h1>
+<p>This section helps you to create a shippable.yml file for your Java project.</p>
+<p>We support for Ant, Maven, Gradle 1.4, OpenJDK 6, OpenJDK 7 and Oracle JDK 7. A sample shippable .yml file for Java is given below for multiple JDK&#8217;s test:</p>
+<p>And testing with Open JDK 7 and Oracle JDK 7</p>
+<p><strong>Maven projects</strong>
+Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
+<p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
+<p><strong>Maven projects</strong>
+Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
+<p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
+<p><strong>Maven projects</strong>
+Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
+<p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
+<p><strong>Gradle projects</strong></p>
+<p>Test command :If your project has &#8220;build.gradle&#8221; file in the repository root ,then Our Java builder will use Gradle to build it. By default it will use gradle check to run the test suite.</p>
+<p>Dependency Management: Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Gradle.
+.. code-block:: bash</p>
+<blockquote>
+<div>gradle assemble</div></blockquote>
+<p><strong>Ant Projects</strong></p>
+<p>Test command :If your file does not contain gradle or maven files ,then Our Java builder will use Ant to build it. By default it will use Ant test to run the test suite.</p>
+<p>Dependency Management: Since there are no standard way to install, You need to specify the install: key to install your project dependencies with Ant.</p>
+<p>Please refer the Java-buildsample example for more details.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/yml_configurations/java.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, vidya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
