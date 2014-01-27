@@ -13,7 +13,7 @@ We support for all the ruby versions, as it installs the project dependencies au
 
 Ruby workers uses RVM to provide various versions of ruby projects . To specify them, use rvm: key in your shippable.yml file, for example:
 
-.. code-block:: json
+.. code-block:: bash 
 
 	language: ruby
 	rvm:

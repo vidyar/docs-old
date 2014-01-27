@@ -27,7 +27,7 @@ The frameworks that we support for .Net are
 
 sample shippable.yml file for csharp is given below :
 
-.. code-block:: json
+.. code-block:: bash 
  
 	language: csharp
  	csharp:

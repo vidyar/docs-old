@@ -22,7 +22,7 @@ We support for the following python versions
 
 To provide several Python versions your projects can be tested against, use python: key in your shippable.yml file, for example:
 
-.. code-block:: json
+.. code-block:: bash
 
 	language: python
 	python:

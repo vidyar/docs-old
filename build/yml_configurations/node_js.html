@@ -48,12 +48,13 @@
 <p>This section helps you to build environment and configuration topics specific to Node.js projects.</p>
 <p><strong>Choosing Node versions to test against :</strong></p>
 <p>We recommend that you use multiple versions to test your Node.js project. Add the following to shippable.yml:</p>
-<div class="highlight-json"><pre>language: node_js
+<div class="highlight-bash"><div class="highlight"><pre>language: node_js
 node_js:
-  - "0.10"
-  - "0.8"
-  - "0.6"
-before_script: "npm install mocha"</pre>
+  - <span class="s2">&quot;0.10&quot;</span>
+  - <span class="s2">&quot;0.8&quot;</span>
+  - <span class="s2">&quot;0.6&quot;</span>
+before_script: <span class="s2">&quot;npm install mocha&quot;</span>
+</pre></div>
 </div>
 <p>This will help us to run your tests against the latest branch releases.</p>
 <p>We support for all the Node.js Versions , as it installs the project dependencies automatically.</p>

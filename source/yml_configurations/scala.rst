@@ -14,7 +14,7 @@ We support for SBT,oraclejdk6, oraclejdk7 ,openjdk6 and openjdk7 . Specify scala
 
 **Dependency Management :** Since Scala builder assumes dependency management based on the projeccts like maven ,gradle or SBT, it will pull down project dependencies automatically before running tests.
 
-.. code-block:: json
+.. code-block:: bash 
 
 	language: scala
 	scala:
@@ -24,7 +24,7 @@ We support for SBT,oraclejdk6, oraclejdk7 ,openjdk6 and openjdk7 . Specify scala
 
 To test against multiple JDKs, use the jdk: .For example, to test against the Oracle JDK 7 and OpenJDK 6:
 
-.. code-block:: json
+.. code-block:: bash
 
 	jdk:
   	- oraclejdk7
@@ -32,7 +32,7 @@ To test against multiple JDKs, use the jdk: .For example, to test against the Or
 
 To test against OpenJDK 7 and Oracle JDK 7:
 
-.. code-block:: json
+.. code-block:: bash
 
 	jdk:
   	  - openjdk7

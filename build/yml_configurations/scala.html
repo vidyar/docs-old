@@ -48,20 +48,23 @@
 <p>This section helps you to build environment and configuration topics specific to Scala projects.</p>
 <p>We support for SBT,oraclejdk6, oraclejdk7 ,openjdk6 and openjdk7 . Specify scala versions like 2.8.x, 2.9.x and 2.10.x in the shippable.yml file as shown below.</p>
 <p><strong>Dependency Management :</strong> Since Scala builder assumes dependency management based on the projeccts like maven ,gradle or SBT, it will pull down project dependencies automatically before running tests.</p>
-<div class="highlight-json"><pre>language: scala
+<div class="highlight-bash"><div class="highlight"><pre>language: scala
 scala:
    - 2.8.2
-   - 2.9.2</pre>
+   - 2.9.2
+</pre></div>
 </div>
 <p>To test against multiple JDKs, use the jdk: .For example, to test against the Oracle JDK 7 and OpenJDK 6:</p>
-<div class="highlight-json"><pre>jdk:
+<div class="highlight-bash"><div class="highlight"><pre>jdk:
 - oraclejdk7
-- openjdk6</pre>
+- openjdk6
+</pre></div>
 </div>
 <p>To test against OpenJDK 7 and Oracle JDK 7:</p>
-<div class="highlight-json"><pre>jdk:
+<div class="highlight-bash"><div class="highlight"><pre>jdk:
   - openjdk7
-  - oraclejdk7</pre>
+  - oraclejdk7
+</pre></div>
 </div>
 <p><strong>SBT projects :</strong></p>
 <p>Test command: If your repository root contains project directory or build.sbt file ,then Scala builder will use sbt ++$SHIPPABLE_SCALA_VERSION test to run your test suite.</p>

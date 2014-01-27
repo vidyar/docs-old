@@ -13,7 +13,7 @@ This section helps you to build environment and configuration topics specific to
 
 We recommend that you use multiple versions to test your Node.js project. Add the following to shippable.yml:
 
-.. code-block:: json
+.. code-block:: bash
 	 
 	language: node_js
 	node_js:

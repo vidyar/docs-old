@@ -5,7 +5,8 @@
 Configuring yml file
 ========================
 
- Our CI environment needs a little information about your project to pick up the type of builds to be executed.The information might be the programming language ,build environment ,version number and the notification alert type.
+
+Our CI environment needs a little information about your project to pick up the type of builds to be executed.The information might be the programming language ,build environment ,version number and the notification alert type.
 Make a note of all these information in a notepad and save it as "shippable.yml" and add it to the root of your repository.
 
 Build_environment is the environment needed to run your build.It can be Windows 2012 or Ubuntu 12.04 LTS.Write it as win2012 for windows project and ubuntu1204 for ubuntu project.
@@ -18,7 +19,7 @@ Notification alerts :Get Notification alerts to the mentioned recipients id in t
 
 A basic shippable.yml file is -
 
-.. code-block:: json
+.. code-block:: bash
 
 	language: ruby
 	rvm:
@@ -41,17 +42,23 @@ The following procedure guides you to build and test your projects using Shippab
 
 Currently we support the following languages.
 
-    1.csharp
-    2.Java
-    3.Node.js
-    4.Python
-    5.Ruby
-    6.Scala
+1.csharp
+
+2.Java
+
+3.Node.js
+
+4.Python
+
+5.Ruby
+
+6.Scala
 
 
 .. toctree::
    :maxdepth: 1
-
+    
+    yml
     Csharp
     Java
     Node.js

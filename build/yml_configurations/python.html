@@ -57,16 +57,17 @@
 <li>3.3</li>
 </ul>
 <p>To provide several Python versions your projects can be tested against, use python: key in your shippable.yml file, for example:</p>
-<div class="highlight-json"><pre>language: python
+<div class="highlight-bash"><div class="highlight"><pre>language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-# command to install dependencies
-install: "pip install -r requirements.txt --use-mirrors"
-# command to run tests
-script: nosetests</pre>
+  - <span class="s2">&quot;2.6&quot;</span>
+  - <span class="s2">&quot;2.7&quot;</span>
+  - <span class="s2">&quot;3.2&quot;</span>
+  - <span class="s2">&quot;3.3&quot;</span>
+<span class="c"># command to install dependencies</span>
+install: <span class="s2">&quot;pip install -r requirements.txt --use-mirrors&quot;</span>
+<span class="c"># command to run tests</span>
+script: nosetests
+</pre></div>
 </div>
 <p><strong>Test Scripts :</strong></p>
 <p>Python projects need to provide script key in their shippable.yml to specify what command to run tests with.
