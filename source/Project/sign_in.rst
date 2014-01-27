@@ -1,0 +1,40 @@
+:title: Signing in
+:description: Signing into shippable and setting up the wizard
+:keywords: sign in, GitHub,Settings, wizard
+
+.. _Signing_in:
+
+Signing in
+===============
+
+
+We use GitHub authentication to get started with our CI, So clicking on the Log In button will take you to the GitHub Signin page.GitHub will ask you to grant read and write access. Shippable needs read/write access to identify you by your github login when you request it for the first time, but it won't touch anything else. You will be redirected to our site after signing in through Github.
+
+If you are already signed in to GitHub, you will automatically be redirected to our site.
+
+Pick the public or private github project that you would like to build from the welcome page.
+
+
+Repo-permission
+
+You will be redirected to Github authorize page for granting permission for the relevant project, Clicking on the Allow acess will take you to our site.
+
+You can see a wizard which helps you to set up your first job in shippable.
+
+
+If you want to switch from public to private, click on dropdown menu on the right corner of window, select settings and click on Enable private projects button.
+
+
+Change public to private projects 
+
+Follow the procedure to setup your first job using the wizard.
+
+ * Select the Node which is suitable for your project. 
+
+Node selection 
+
+* Create and run your job by following our document .You can also click on here in the wizard which will also be redirected to the documentaion page.
+
+job selection 
+
+

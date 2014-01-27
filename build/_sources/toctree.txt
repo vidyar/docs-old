@@ -13,11 +13,14 @@ This documentation has the following resources:
    :maxdepth: 1
 
    Introduction <index>
-   configuring yml file/index
-   signing in/index
-   creating a job /index
-   commandline/index
-   contributing/index
-   api/index
-   terms/index
-   faq
+   Configuring yml file/index
+   Signing in
+   Creating a job 
+   Running a build
+   Reading reports
+   Setting Job permissions
+   Configuring Notification alerts
+   Continuous deployment to Heroku
+   Services and Databases/index
+   Examples/index
+   Reporting a problem

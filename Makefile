@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
+PYTHON	      =	python
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -28,16 +29,18 @@ help:
 	#@echo "  devhelp    to make HTML files and a Devhelp project"
 	#@echo "  epub       to make an epub"
 	#@echo "  latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
-	@echo "  latexpdf   to make LaTeX files and run them through pdflatex"
-	@echo "  text       to make text files"
+	#@echo "  latexpdf   to make LaTeX files and run them through pdflatex"
+	#@echo "  text       to make text files"
 	@echo "  man        to make manual pages"
-	@echo "  texinfo    to make Texinfo files"
-	@echo "  info       to make Texinfo files and run them through makeinfo"
-	@echo "  gettext    to make PO message catalogs"
-	@echo "  changes    to make an overview of all changed/added/deprecated items"
-	@echo "  linkcheck  to check all external links for integrity"
-	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
-
+	#@echo "  texinfo    to make Texinfo files"
+	#@echo "  info       to make Texinfo files and run them through makeinfo"
+	#@echo "  gettext    to make PO message catalogs"
+	#@echo "  changes    to make an overview of all changed/added/deprecated items"
+	#@echo "  linkcheck  to check all external links for integrity"
+	#@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo " docs	     to build the docs and copy the static files to the outputdir"
+	@echo " server 	     to serve the docs in your browser under \`http://localhst:8080\` "
+	@echo " publish      to publish the app to shippable"	
 clean:
 	-rm -rf $(BUILDDIR)/*
 

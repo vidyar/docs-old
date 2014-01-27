@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Continuous deployment to Heroku: &mdash; shippable 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="continuous-deployment-to-heroku">
+<span id="id1"></span><h1>Continuous deployment to Heroku:<a class="headerlink" href="#continuous-deployment-to-heroku" title="Permalink to this headline">¶</a></h1>
+<p>Heroku supports Ruby, Node.js, Python, so you can use these languages to build and deploy apps on Heroku. You can deploy to your own server by adding the custom after_success: .</p>
+<p>For this you need to add the Public key that was generated for your subscription in shippable to set up continous deployment on providers.</p>
+<ul class="simple">
+<li>Go to settings and copy the SSH Key or public key generated for your subscription.</li>
+<li>Log In to Heroku and add the SSH key to your account</li>
+</ul>
+<p>.Heroku-ssh</p>
+<p>A Sample deployment configurations to your shippable.yml file is given below .</p>
+<p>You need to copy the Git URL from your project for deployment in heroku .</p>
+<ul class="simple">
+<li>Go to apps and select your project.</li>
+<li>Go to the settings page of your project and copy the Git URL.</li>
+</ul>
+<p>Heroku-url</p>
+<ul class="simple">
+<li>Add it to the shippable.yml file.</li>
+</ul>
+<p>An example is given below :</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/Project/Continuous_deployment_to_Heroku.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, vidya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

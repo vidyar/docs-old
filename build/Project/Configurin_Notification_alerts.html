@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuring notification alerts &mdash; shippable 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuring-notification-alerts">
+<span id="id1"></span><h1>Configuring notification alerts<a class="headerlink" href="#configuring-notification-alerts" title="Permalink to this headline">¶</a></h1>
+<p>1.Email
+2.Campfire
+We will notify you about your build status to the mentioned recipients in the yml file.So you should give us information like mode of notification you need and your preferences like when do you wanted to get alert messages.</p>
+<p>If you haven&#8217;t set any notifications, then by default it will send status of your build like success, failure to the commiter and the repository owner .</p>
+<p>It will notify you on the given branch, when</p>
+<ul class="simple">
+<li>a build was broken</li>
+<li>a broken build was just fixed</li>
+</ul>
+<p>If you are triggering the build manually, then by default</p>
+<p>You will get email notifications, even if you have turned off the notifications.</p>
+<p>Build admin will also get email notification along with the the owner.</p>
+<div class="section" id="email-notification">
+<h2>Email notification:<a class="headerlink" href="#email-notification" title="Permalink to this headline">¶</a></h2>
+<p>You can configure the email notification by specifying the recipients id in the yml file.</p>
+<p>You can also specify when you want to get notified using change|always|never . Always and never means you should be notified always or never.
+change means you want to notify only when the build status changes on the given branch.</p>
+<p>If you do not want to get notified, then you can configure the email notification to false.</p>
+</div>
+<div class="section" id="campfire-notification">
+<h2>Campfire notification:<a class="headerlink" href="#campfire-notification" title="Permalink to this headline">¶</a></h2>
+<p>You can also configure the campfire notifications so that we will send you the alerts to the campfire chat rooms.
+The general format is given below</p>
+<ul class="simple">
+<li><strong>subdomain</strong> is your campfire subdomain (i.e. &#8216;org1&#8217; if you visit &#8216;<a class="reference external" href="https://org1.campfirenow.com">https://org1.campfirenow.com</a>&#8216;)</li>
+<li><strong>api token</strong> is the code where you can post the notifications.Go to My info tab in Campfire.</li>
+</ul>
+<p>Campfire api</p>
+<p>Copy the API authentication token generated for you and put it in the Yml file.</p>
+<ul class="simple">
+<li><strong>room id</strong>  this is the room id, not the name.Go to the room where you want to get notified and copy the room id from the URL.https://org1.campfirenow.com/room/673551</li>
+</ul>
+<p>An example is given below</p>
+<p>You can also customise the notifications using template :</p>
+<p>The following variables can also be added :</p>
+<ul class="simple">
+<li>repository: your GitHub repo URL</li>
+<li>build_number: build number</li>
+<li>branch: branch build name</li>
+<li>commit: shortened commit SHA</li>
+<li>author: commit author name</li>
+<li>message:Shippable message to the build</li>
+<li>compare_url: commit change view URL</li>
+<li>build_url: URL of the build detail</li>
+</ul>
+<p>You can also specify other flags, like on_success and on_failure in the notifications.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../toctree.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuring notification alerts</a><ul>
+<li><a class="reference internal" href="#email-notification">Email notification:</a></li>
+<li><a class="reference internal" href="#campfire-notification">Campfire notification:</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/Project/Configurin_Notification_alerts.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, vidya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

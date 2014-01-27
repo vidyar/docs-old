@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Java: &mdash; sample-docs 3.0 documentation</title>
+    <title>Java: &mdash; shippable 0 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -16,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '3.0',
+        VERSION:     '0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -25,8 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="sample-docs 3.0 documentation" href="../index.html" /> 
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,7 +34,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -45,28 +44,43 @@
           <div class="body">
             
   <div class="section" id="java">
-<h1>Java:<a class="headerlink" href="#java" title="Permalink to this headline">¶</a></h1>
+<span id="java-yml"></span><h1>Java:<a class="headerlink" href="#java" title="Permalink to this headline">¶</a></h1>
 <p>This section helps you to create a shippable.yml file for your Java project.</p>
 <p>We support for Ant, Maven, Gradle 1.4, OpenJDK 6, OpenJDK 7 and Oracle JDK 7. A sample shippable .yml file for Java is given below for multiple JDK&#8217;s test:</p>
+<div class="highlight-bash"><div class="highlight"><pre>language: java
+jdk:
+   - oraclejdk7
+   - openjdk6
+</pre></div>
+</div>
 <p>And testing with Open JDK 7 and Oracle JDK 7</p>
+<div class="highlight-bash"><div class="highlight"><pre>jdk:
+  - openjdk7
+  - oraclejdk7
+</pre></div>
+</div>
 <p><strong>Maven projects</strong>
 Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
 <p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
-<p><strong>Maven projects</strong>
-Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
+<p><strong>Maven projects</strong></p>
+<p>Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
 <p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
-<p><strong>Maven projects</strong>
-Test command : If your project has pom.xml file in the repository root ,then Our Java builder will use Maven 3 to build it. By default it will use mvn test to run the test suite.</p>
-<p>Dependency Management : Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Maven.</p>
+<div class="highlight-bash"><div class="highlight"><pre>mvn install -DskipTests<span class="o">=</span><span class="nb">true</span>
+</pre></div>
+</div>
 <p><strong>Gradle projects</strong></p>
 <p>Test command :If your project has &#8220;build.gradle&#8221; file in the repository root ,then Our Java builder will use Gradle to build it. By default it will use gradle check to run the test suite.</p>
-<p>Dependency Management: Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Gradle.
-.. code-block:: bash</p>
-<blockquote>
-<div>gradle assemble</div></blockquote>
+<p>Dependency Management: Before running tests, Java builder will execute the below line to install your project&#8217;s dependencies with Gradle.</p>
+<div class="highlight-bash"><div class="highlight"><pre>gradle assemble
+</pre></div>
+</div>
 <p><strong>Ant Projects</strong></p>
 <p>Test command :If your file does not contain gradle or maven files ,then Our Java builder will use Ant to build it. By default it will use Ant test to run the test suite.</p>
 <p>Dependency Management: Since there are no standard way to install, You need to specify the install: key to install your project dependencies with Ant.</p>
+<div class="highlight-bash"><div class="highlight"><pre>language: java
+install: ant deps
+</pre></div>
+</div>
 <p>Please refer the Java-buildsample example for more details.</p>
 </div>
 
@@ -104,7 +118,7 @@ Test command : If your project has pom.xml file in the repository root ,then Our
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

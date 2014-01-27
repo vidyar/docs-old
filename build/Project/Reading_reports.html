@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reading reports : &mdash; shippable 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reading-reports">
+<span id="id1"></span><h1>Reading reports :<a class="headerlink" href="#reading-reports" title="Permalink to this headline">¶</a></h1>
+<p>You can see the console output appears on the window as the build proceeds.This log refreshes real time.The status of the build are also available on the window as the build proceeds execution like Queued , In progress , Success ,Failure and Unstable along with the build duration. Once the build finishes execution, the build artifacts are available as a .tar file. You can download this by clicking on the Download artifacts button.</p>
+<p>console</p>
+<p>Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed. Then only you are able to check the Test and coverage reports as soon as the build finishes execution.</p>
+<p>Windows worker will only archive the contents of the Shippable folder. So if you want to archive all the files in your repo, then you just need to keep everything in Shippable folder.</p>
+<ul class="simple">
+<li>Test - Testing is an activity to check whether the actual result is matching the expected result.Here you can check number of tests passed or failed in the build by clicking on the Test tab.</li>
+</ul>
+<p>Test report</p>
+<ul class="simple">
+<li>Code coverage - To measure what percentage of code has been exercised by a test suite, one or more coverage criteria are used. Here you can check the Sequence coverage and branch coverage for each &amp; every methods in a class ny clicking on the Coverage tab.</li>
+</ul>
+<p>code coverage report</p>
+<p><strong>Build Trends</strong></p>
+<p>You can also check the Build trends like Build duration, Job health, repository size, file count, Unit test and code coverage in graphs by clicking on the Build trends button as shown in snapshot by an arrow.</p>
+<p>Build_trend button</p>
+<ul class="simple">
+<li>Build duration : Graph shows the amount of time taken to run the build. X-axis represents the number of builds and Y-axis represents the time taken run the build.</li>
+<li>Job health : Graph shows the number of builds run on each day. X-axis represents the days (Month and date) and Y-axis represents the number of builds ran.</li>
+</ul>
+<p>Build_trends1</p>
+<ul class="simple">
+<li>Repository size : Graph shows the size of your repository for each build . X-axis represents the number of builds and Y-axis represents the size of repository .</li>
+<li>File count : Graph shows the number of files in your repository . X-axis represents the number of builds and Y-axis represents the file count.</li>
+</ul>
+<p>Build_trend3</p>
+<ul class="simple">
+<li>Unit tests : Graph shows the number of tests passed or failed per method in each build. X-axis represents the number of builds and Y-axis represents the test results.</li>
+<li>Code coverage : Graph shows the sequence and branch coverage per method . X-axis represents the number of builds and Y-axis represents the sequence and branch covered per method.</li>
+</ul>
+<p>Build_trend2</p>
+<ul class="simple">
+<li>Console output and artifacts for previous builds for a job are available by clicking on the View another build dropdown in the right pane.</li>
+</ul>
+<p>View another build</p>
+<ul class="simple">
+<li>You can also browse the code on github using View on Github button next to the View another build button.</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/Project/Reading_reports.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, vidya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
