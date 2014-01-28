@@ -16,7 +16,7 @@ For this you need to add the Public key that was generated for your subscription
 * Log In to Heroku and add the SSH key to your account 
 
 
-.image:: images/Heroku-ssh.png
+.. image:: images/Heroku-ssh.png
 
 
 A Sample deployment configurations to your shippable.yml file is given below .
@@ -35,7 +35,7 @@ You need to copy the Git URL from your project for deployment in heroku .
 * Go to the settings page of your project and copy the Git URL. 
 
 
-.image:: images/Heroku-url.png
+.. image:: images/Heroku-url.png
 
 
 * Add it to the shippable.yml file. 
