@@ -46,8 +46,8 @@
   <div class="section" id="configuring-notification-alerts">
 <span id="id1"></span><h1>Configuring notification alerts<a class="headerlink" href="#configuring-notification-alerts" title="Permalink to this headline">¶</a></h1>
 <p>1.Email
-2.Campfire
-We will notify you about your build status to the mentioned recipients in the yml file.So you should give us information like mode of notification you need and your preferences like when do you wanted to get alert messages.</p>
+2.Campfire</p>
+<p>We will notify you about your build status to the mentioned recipients in the yml file.So you should give us information like mode of notification you need and your preferences like when do you wanted to get alert messages.</p>
 <p>If you haven&#8217;t set any notifications, then by default it will send status of your build like success, failure to the commiter and the repository owner .</p>
 <p>It will notify you on the given branch, when</p>
 <ul class="simple">
@@ -66,13 +66,13 @@ change means you want to notify only when the build status changes on the given 
 </div>
 <div class="section" id="campfire-notification">
 <h2>Campfire notification:<a class="headerlink" href="#campfire-notification" title="Permalink to this headline">¶</a></h2>
-<p>You can also configure the campfire notifications so that we will send you the alerts to the campfire chat rooms.
-The general format is given below</p>
+<p>You can also configure the campfire notifications so that we will send you the alerts to the campfire chat rooms.</p>
+<p>The general format is given below</p>
 <ul class="simple">
 <li><strong>subdomain</strong> is your campfire subdomain (i.e. &#8216;org1&#8217; if you visit &#8216;<a class="reference external" href="https://org1.campfirenow.com">https://org1.campfirenow.com</a>&#8216;)</li>
 <li><strong>api token</strong> is the code where you can post the notifications.Go to My info tab in Campfire.</li>
 </ul>
-<p>Campfire api</p>
+<p>..image:: images/Campfire_api.png</p>
 <p>Copy the API authentication token generated for you and put it in the Yml file.</p>
 <ul class="simple">
 <li><strong>room id</strong>  this is the room id, not the name.Go to the room where you want to get notified and copy the room id from the URL.https://org1.campfirenow.com/room/673551</li>

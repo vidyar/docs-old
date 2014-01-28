@@ -4,6 +4,7 @@
 
 .. _Signing_in:
 
+
 Signing in
 ===============
 
@@ -15,7 +16,7 @@ If you are already signed in to GitHub, you will automatically be redirected to 
 Pick the public or private github project that you would like to build from the welcome page.
 
 
-Repo-permission
+.. image:: images/Welcomepage.png
 
 You will be redirected to Github authorize page for granting permission for the relevant project, Clicking on the Allow acess will take you to our site.
 
@@ -25,16 +26,61 @@ You can see a wizard which helps you to set up your first job in shippable.
 If you want to switch from public to private, click on dropdown menu on the right corner of window, select settings and click on Enable private projects button.
 
 
-Change public to private projects 
+.. image:: images/github_permission.png 
 
 Follow the procedure to setup your first job using the wizard.
 
  * Select the Node which is suitable for your project. 
 
-Node selection 
+.. image:: images/wizard_node.png 
 
 * Create and run your job by following our document .You can also click on here in the wizard which will also be redirected to the documentaion page.
 
-job selection 
+.. image:: images/Wizard_job.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

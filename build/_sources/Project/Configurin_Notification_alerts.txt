@@ -4,12 +4,14 @@
 
 .. _Configuring_notification_alerts:
 
+
 Configuring notification alerts
 =================================
 
 
 1.Email
 2.Campfire
+
 We will notify you about your build status to the mentioned recipients in the yml file.So you should give us information like mode of notification you need and your preferences like when do you wanted to get alert messages.
 
 If you haven't set any notifications, then by default it will send status of your build like success, failure to the commiter and the repository owner .
@@ -17,7 +19,9 @@ If you haven't set any notifications, then by default it will send status of you
 It will notify you on the given branch, when
 
 * a build was broken
+
 * a broken build was just fixed
+
 
 If you are triggering the build manually, then by default
 
@@ -27,21 +31,22 @@ Build admin will also get email notification along with the the owner.
 
 Email notification:
 ----------------------
+
 You can configure the email notification by specifying the recipients id in the yml file.
 
-.. code_block:: json
+.. code_block:: bash
 
 	notifications:
   	  email:
     	    - exampleone@org.com
-            - exampletwo@org.com
+          - exampletwo@org.com
 
 
 You can also specify when you want to get notified using change|always|never . Always and never means you should be notified always or never.
 change means you want to notify only when the build status changes on the given branch.
 
 
-.. code_block:: json
+.. code_block:: bash
  
 	notifications:
   	   email:
@@ -54,7 +59,7 @@ change means you want to notify only when the build status changes on the given 
 
 If you do not want to get notified, then you can configure the email notification to false.
 
-.. code_block:: json
+.. code_block:: bash
 
 	notifications:
 	   email: false
@@ -64,6 +69,7 @@ Campfire notification:
 ---------------------------
 
 You can also configure the campfire notifications so that we will send you the alerts to the campfire chat rooms.
+
 The general format is given below
 
 .. code_block:: bash
@@ -72,9 +78,10 @@ The general format is given below
             campfire: [subdomain]:[api token]@[room id]
 
 * **subdomain** is your campfire subdomain (i.e. 'org1' if you visit 'https://org1.campfirenow.com')
+
 * **api token** is the code where you can post the notifications.Go to My info tab in Campfire. 
 
-Campfire api
+..image:: images/Campfire_api.png
 
 Copy the API authentication token generated for you and put it in the Yml file.
 
@@ -90,7 +97,7 @@ An example is given below
 
 You can also customise the notifications using template :
 
-.. code_block:: json
+.. code_block:: bash
 
         notifications:
           campfire:
@@ -104,13 +111,21 @@ You can also customise the notifications using template :
 The following variables can also be added :
 
 * repository: your GitHub repo URL
+
 * build_number: build number
+
 * branch: branch build name
+
 * commit: shortened commit SHA
+
 * author: commit author name
+
 * message:Shippable message to the build
+
 * compare_url: commit change view URL
+
 * build_url: URL of the build detail
+
 
 You can also specify other flags, like on_success and on_failure in the notifications.
 
