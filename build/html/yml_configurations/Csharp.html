@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; sample-docs 3.0 documentation</title>
+    <title>Csharp: &mdash; shippable 0 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -16,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '3.0',
+        VERSION:     '0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -25,8 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="sample-docs 3.0 documentation" href="../index.html" /> 
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,7 +34,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -44,7 +43,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <p><strong>Csharp:</strong></p>
+  <div class="section" id="csharp">
+<span id="csharp-yml"></span><h1>Csharp:<a class="headerlink" href="#csharp" title="Permalink to this headline">¶</a></h1>
 <p>This section helps you to create a shippable.yml file for your csharp project.The information that we required are the version number , build environment , frameworks and the notification alert type.</p>
 <p>Choosing .Net versions/implementations to test against:</p>
 <p>We support for the following .Net versions</p>
@@ -61,22 +61,17 @@
 <li>Nant</li>
 </ul>
 <p>sample shippable.yml file for csharp is given below :</p>
-<div class="highlight-json"><div class="highlight"><pre>
+<div class="highlight-bash"><div class="highlight"><pre>language: csharp
+csharp:
+    <span class="s2">&quot; - dotNet40&quot;</span>
+build_environment: win2012
+before_install: msbuild Shouldly.sln
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>language: csharp</dt>
-<dd><dl class="first docutils">
-<dt>csharp:</dt>
-<dd>&#8221; - dotNet40&#8221;</dd>
-</dl>
-<p class="last">build_environment: win2012
-before_install: msbuild Shouldly.sln</p>
-</dd>
-</dl>
 <p>Specify the version numbers and frameworks that you have used to build and run your project in the shippable.yml file.</p>
 <p>Keep the test outputs in shippable/testresults and output of codecoverage in shippable/codecoverage folder to get the reports parsed.Otherwise you will not find the reports in our CI.</p>
 <p>Please refer the csharp-buildsample example for more details.</p>
+</div>
 
 
           </div>
@@ -112,7 +107,7 @@ before_install: msbuild Shouldly.sln</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../index.html">sample-docs 3.0 documentation</a> &raquo;</li> 
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

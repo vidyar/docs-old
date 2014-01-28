@@ -4,31 +4,13 @@
    contain the root `toctree` directive.
 
 Welcome to Shippable documentation!
-=======================================
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-**Welcome to shippable**
+======================================
 
 **Getting Started guide - Run your first Shippable build !**
 
-*Overview:*
+**Overview:**
 
 Shippable helps you easily add continuous integration and deployment to your GitHub repositories in a matter of minutes. You can sign in with GitHub, set up a job, and you're good to go! We will build and test your repos at every checkin and notify you.
 We support for many popular languages like Ruby, Python, Node.js, Java, Scala, .NET on Windows and Ubuntu Nodes . Add MySQL, Postgres, Elastic Search, Redis as needed - we support it all. 
 
-
-
-Indices and tables
-
-
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

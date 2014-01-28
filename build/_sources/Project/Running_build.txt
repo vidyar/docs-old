@@ -12,7 +12,7 @@ Builds can be executed either manually or by using webhooks.
 
 1. Manually: Click on the Run this Job button at the top center of the page . As soon as you click on the run button ,the success message will be displayed. 
 
-..image:: images/runnew.png
+.. image:: images/runnew.png
 
 2. Using Webhooks: Webhooks are user-defined HTTP callbacks .They are usually triggered by some event, such as pushing code to a repository or a comment being posted to a blog. When that event occurs the source site makes an HTTP request to the URI configured for the webhook.i.e Your builds will run automatically when someone checks in code in the repository.
 If your job has multiple versions, then each version results in a separate build .You can check the console output for each build using View another build button.

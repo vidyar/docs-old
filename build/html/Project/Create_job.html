@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Creating a job &mdash; shippable 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="shippable 0 documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="creating-a-job">
+<span id="id1"></span><h1>Creating a job<a class="headerlink" href="#creating-a-job" title="Permalink to this headline">¶</a></h1>
+<p>A Job is used to handle your build projects in our CI. You need to create a job for each repo you want to build.</p>
+<p><strong>Node Selection</strong></p>
+<p>Node is container that will run your builds and tests. So add the relevant node or build environment before running the builds. Select the build environment to run your job from the dashboard on the right side of window, if you have not selected it yet by clicking on the + button .</p>
+<p>..image:: images/Nodes.png</p>
+<p>You can also delete or reset the node by clicking on the Manage node button. But remember that Deleting a node will result in all data being purged in relation to that node .</p>
+<p>Follow the steps below for creating a job.</p>
+<ul class="simple">
+<li>Click on the Create a new job button in the left sidebar .</li>
+</ul>
+<img alt="../_images/Createjobbtn.png" src="../_images/Createjobbtn.png" />
+<ul class="simple">
+<li>You can see a list of your repositories on the new modal window.Pick the relevant repository.</li>
+</ul>
+<img alt="../_images/Createjob1.png" src="../_images/Createjob1.png" />
+<ul class="simple">
+<li>Shippable will automatically detect the list of branches available for your repository and the yml file to configure the job.</li>
+<li>A modal dialog will pop up,where you can select the Branch that you would like to build and test from the dropdown menu.</li>
+</ul>
+<img alt="../_images/Createjob2.png" src="../_images/Createjob2.png" />
+<ul class="simple">
+<li>If that branch has yml file, then we can use to configure the job. You just need to click on the Let&#8217;s do this! button.</li>
+<li>You will get a Success message stating that &#8220;Your Job has been set up&#8221; and the job is updated in the jobs list menu in the left pane .</li>
+<li>You can create additional jobs if required by clicking on the Create a new job button .</li>
+</ul>
+<p>To delete a job , just click the button next to the run button. It will ask you for confirmation. Click Yes. Your job will no longer exists in the Job pane.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/Project/Create_job.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../toctree.html">shippable 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, vidya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

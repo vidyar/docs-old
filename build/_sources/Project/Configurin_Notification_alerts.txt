@@ -10,6 +10,7 @@ Configuring notification alerts
 
 
 1.Email
+
 2.Campfire
 
 We will notify you about your build status to the mentioned recipients in the yml file.So you should give us information like mode of notification you need and your preferences like when do you wanted to get alert messages.
@@ -81,7 +82,7 @@ The general format is given below
 
 * **api token** is the code where you can post the notifications.Go to My info tab in Campfire. 
 
-..image:: images/Campfire_api.png
+.. image:: images/Campfire_api.png
 
 Copy the API authentication token generated for you and put it in the Yml file.
 
