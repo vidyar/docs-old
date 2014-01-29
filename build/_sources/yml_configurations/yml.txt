@@ -24,7 +24,7 @@ A basic shippable.yml file is -
 	language: ruby
 	rvm:
     	  - "1.9.2"
-          - "1.9.3"
+        - "1.9.3"
 	notifications:
   	   email:
     		exampleone@org.com

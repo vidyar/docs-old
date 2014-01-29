@@ -18,8 +18,8 @@ Ruby workers uses RVM to provide various versions of ruby projects . To specify 
 	language: ruby
 	rvm:
   	  - 2.0.0
-          - 1.9.3
-        script: rake test
+      - 1.9.3
+    script: rake test
 
 
 **Test Scripts:**

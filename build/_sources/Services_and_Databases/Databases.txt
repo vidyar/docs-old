@@ -13,7 +13,7 @@ MongoDB
 MongoDB is an open-source, document-oriented database designed for ease of development and scaling.
 MongoDB will not start on boot. Add the service to the shippable.yml file to start service for your project and it binds to 127.0.0.1.
 
-.. code_block:: bash
+.. code-block:: bash
 	
 	services:
  	 - mongodb
@@ -28,7 +28,7 @@ MySQL is started on boot, binds to 127.0.0.1 and requires authentication. You ca
 
 Create the myapp_test database first and run it as part of your build script.
 
-.. code_block:: bash
+.. code-block:: bash
 	
 	before_script:
   	  - mysql -e 'create database myapp_test;'
@@ -44,7 +44,7 @@ PostgreSQL is started on boot binds to 127.0.0.1 and requires authentication. Yo
 
 Create the database as part of your build process:
 
-.. code_block:: bash
+.. code-block:: bash
 
 	before_script:
 	  - psql -c 'create database myapp_test;' -U postgres

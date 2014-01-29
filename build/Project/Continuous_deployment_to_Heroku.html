@@ -53,6 +53,10 @@
 </ul>
 <img alt="../_images/Heroku-ssh.png" src="../_images/Heroku-ssh.png" />
 <p>A Sample deployment configurations to your shippable.yml file is given below .</p>
+<div class="highlight-bash"><div class="highlight"><pre>after_success :
+git push deploy Git URL
+</pre></div>
+</div>
 <p>You need to copy the Git URL from your project for deployment in heroku .</p>
 <ul class="simple">
 <li>Go to apps and select your project.</li>
@@ -63,6 +67,10 @@
 <li>Add it to the shippable.yml file.</li>
 </ul>
 <p>An example is given below :</p>
+<div class="highlight-bash"><div class="highlight"><pre>after_success :
+git push deploy git@heroku.com:shroudd-headland-1758.git
+</pre></div>
+</div>
 </div>
 
 

@@ -49,9 +49,9 @@
 <strong>Ruby versions for testing :</strong></p>
 <p>We support for all the ruby versions, as it installs the project dependencies automatically.</p>
 <p>Ruby workers uses RVM to provide various versions of ruby projects . To specify them, use rvm: key in your shippable.yml file, for example:</p>
-<div class="highlight-bash"><div class="highlight"><pre>language: ruby
-rvm:
-  - 2.0.0
+<div class="highlight-bash"><div class="highlight"><pre>    language: ruby
+    rvm:
+      - 2.0.0
   - 1.9.3
 script: rake <span class="nb">test</span>
 </pre></div>

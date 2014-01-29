@@ -49,18 +49,30 @@
 <h2>MongoDB<a class="headerlink" href="#mongodb" title="Permalink to this headline">¶</a></h2>
 <p>MongoDB is an open-source, document-oriented database designed for ease of development and scaling.
 MongoDB will not start on boot. Add the service to the shippable.yml file to start service for your project and it binds to 127.0.0.1.</p>
+<div class="highlight-bash"><div class="highlight"><pre>services:
+ - mongodb
+</pre></div>
+</div>
 <p>You can also refer the example mongodb-buildsample on github for more details.</p>
 </div>
 <div class="section" id="mysql">
 <h2>MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h2>
 <p>MySQL is started on boot, binds to 127.0.0.1 and requires authentication. You can connect to the databases using the username &#8220;shippable&#8221; and password is not required.</p>
 <p>Create the myapp_test database first and run it as part of your build script.</p>
+<div class="highlight-bash"><div class="highlight"><pre>before_script:
+  - mysql -e <span class="s1">&#39;create database myapp_test;&#39;</span>
+</pre></div>
+</div>
 <p>You can also refer the example mysql-buildsample on github for more details.</p>
 </div>
 <div class="section" id="postgresql">
 <h2>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h2>
 <p>PostgreSQL is started on boot binds to 127.0.0.1 and requires authentication. You can connect to the databases using the username &#8220;postgres&#8221; and password is not required .</p>
 <p>Create the database as part of your build process:</p>
+<div class="highlight-bash"><div class="highlight"><pre>before_script:
+  - psql -c <span class="s1">&#39;create database myapp_test;&#39;</span> -U postgres
+</pre></div>
+</div>
 <p>You can also refer the example postgresql-buildsample on github for more details.</p>
 </div>
 <div class="section" id="sqlite3">

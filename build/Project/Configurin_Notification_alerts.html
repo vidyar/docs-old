@@ -60,14 +60,37 @@
 <div class="section" id="email-notification">
 <h2>Email notification:<a class="headerlink" href="#email-notification" title="Permalink to this headline">¶</a></h2>
 <p>You can configure the email notification by specifying the recipients id in the yml file.</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+  email:
+    - exampleone@org.com
+  - exampletwo@org.com
+</pre></div>
+</div>
 <p>You can also specify when you want to get notified using change|always|never . Always and never means you should be notified always or never.
 change means you want to notify only when the build status changes on the given branch.</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+   email:
+     recipients:
+       - exampleone@org.com
+       - exampletwo@org.com
+     on_success: change
+     on_failure: always
+</pre></div>
+</div>
 <p>If you do not want to get notified, then you can configure the email notification to false.</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+   email: <span class="nb">false</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="campfire-notification">
 <h2>Campfire notification:<a class="headerlink" href="#campfire-notification" title="Permalink to this headline">¶</a></h2>
 <p>You can also configure the campfire notifications so that we will send you the alerts to the campfire chat rooms.</p>
 <p>The general format is given below</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+   campfire: <span class="o">[</span>subdomain<span class="o">]</span>:<span class="o">[</span>api token<span class="o">]</span>@<span class="o">[</span>room id<span class="o">]</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li><strong>subdomain</strong> is your campfire subdomain (i.e. &#8216;org1&#8217; if you visit &#8216;<a class="reference external" href="https://org1.campfirenow.com">https://org1.campfirenow.com</a>&#8216;)</li>
 <li><strong>api token</strong> is the code where you can post the notifications.Go to My info tab in Campfire.</li>
@@ -78,7 +101,20 @@ change means you want to notify only when the build status changes on the given 
 <li><strong>room id</strong>  this is the room id, not the name.Go to the room where you want to get notified and copy the room id from the URL.https://org1.campfirenow.com/room/673551</li>
 </ul>
 <p>An example is given below</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+  campfire: org1:99b2E15783a6adf698e143927e65d11045o47804@673551
+</pre></div>
+</div>
 <p>You can also customise the notifications using template :</p>
+<div class="highlight-bash"><div class="highlight"><pre>notifications:
+  campfire:
+    rooms:
+      - <span class="o">[</span>subdomain<span class="o">]</span>:<span class="o">[</span>api token<span class="o">]</span>@<span class="o">[</span>room id<span class="o">]</span>
+    template:
+      - <span class="s2">&quot;%{repository} (%{commit}) : %{message}&quot;</span>
+      - <span class="s2">&quot;Build details: %{build_url}&quot;</span>
+</pre></div>
+</div>
 <p>The following variables can also be added :</p>
 <ul class="simple">
 <li>repository: your GitHub repo URL</li>

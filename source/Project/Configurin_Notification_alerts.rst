@@ -35,7 +35,7 @@ Email notification:
 
 You can configure the email notification by specifying the recipients id in the yml file.
 
-.. code_block:: bash
+.. code-block:: bash
 
 	notifications:
   	  email:
@@ -47,7 +47,7 @@ You can also specify when you want to get notified using change|always|never . A
 change means you want to notify only when the build status changes on the given branch.
 
 
-.. code_block:: bash
+.. code-block:: bash
  
 	notifications:
   	   email:
@@ -60,7 +60,7 @@ change means you want to notify only when the build status changes on the given 
 
 If you do not want to get notified, then you can configure the email notification to false.
 
-.. code_block:: bash
+.. code-block:: bash
 
 	notifications:
 	   email: false
@@ -73,7 +73,7 @@ You can also configure the campfire notifications so that we will send you the a
 
 The general format is given below
 
-.. code_block:: bash
+.. code-block:: bash
        
          notifications:
             campfire: [subdomain]:[api token]@[room id]
@@ -82,7 +82,9 @@ The general format is given below
 
 * **api token** is the code where you can post the notifications.Go to My info tab in Campfire. 
 
+
 .. image:: images/Campfire_api.png
+
 
 Copy the API authentication token generated for you and put it in the Yml file.
 
@@ -90,7 +92,7 @@ Copy the API authentication token generated for you and put it in the Yml file.
 
 An example is given below
  
-.. code_block:: bash
+.. code-block:: bash
 	
 	notifications:
   	  campfire: org1:99b2E15783a6adf698e143927e65d11045o47804@673551
@@ -98,7 +100,7 @@ An example is given below
 
 You can also customise the notifications using template :
 
-.. code_block:: bash
+.. code-block:: bash
 
         notifications:
           campfire:
