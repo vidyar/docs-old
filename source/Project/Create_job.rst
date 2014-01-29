@@ -14,7 +14,7 @@ A Job is used to handle your build projects in our CI. You need to create a job 
 Node is container that will run your builds and tests. So add the relevant node or build environment before running the builds. Select the build environment to run your job from the dashboard on the right side of window, if you have not selected it yet by clicking on the + button .
 
 
-..image:: images/Nodes.png 
+.. image:: images/Nodes.png 
 
 You can also delete or reset the node by clicking on the Manage node button. But remember that Deleting a node will result in all data being purged in relation to that node .
 
