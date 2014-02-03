@@ -1,59 +1,185 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>Pricing plans</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="UxV66EKuPe87dgnH1sbrldrx6VsoWMrx5NjwkgUFxXI" />
+    <title>{{ meta['title'] if meta and meta['title'] else title }} - Shippable Documentation</title>
+    <meta name="description" content="{{ meta['description'] if meta }}" />
+    <meta name="keywords" content="{{ meta['keywords'] if meta }}" />
+    <!-- Swiftype tags: https://swiftype.com/documentation/meta_tags -->
+    <meta property='st:popularity' content='4' />
+    <meta property='st:type' content='docker_doc' />
+
+    {%- set url_root = pathto('', 1) %}
+    {%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+
+    {%- if current_version == 'latest' %}
+      {% set github_tag = 'master' %}
+    {% else %}
+      {% set github_tag = current_version %}
+    {% endif %}
+
+    <script type="text/javascript">
+        // This is included here for Javascript that doesn't have access to the templates.
+        var doc_version = "{{ current_version }}";
+        var doc_slug = "{{ slug }}";
+    </script>
+
+    {%- set css_files = css_files + ['_static/css/bootstrap.css'] %}
+    {%- set css_files = css_files + ['_static/pygments.css'] %}
+    {%- set css_files = css_files + ['_static/css/main.css'] %}
+
+    {%- set script_files =
+    ['//code.jquery.com/jquery-1.10.1.min.js']
+    + ['//fonts.googleapis.com/css?family=Cabin:400,700,400italic']
+    %}
+
+    {#
+        This part is hopefully complex because things like |cut '/index/' are not available in Sphinx jinja
+        and will make it crash. (and we need index/ out.
+    #}
+    <link rel="canonical" href="https://www.shippable.com/en/latest/
+    {%- for word in pagename.split('/') -%}
+        {%- if word != 'index' -%}
+            {%- if word != '' -%}
+                {{ word }}/
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+    ">
+
+    {%- for cssfile in css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor %}
+
+    {%- for scriptfile in script_files if scriptfile != '_static/jquery.js' %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+    <link rel="shortcut icon" href="{{ pathto('_static/favicon.ico', 1) }}"/>
+    {%- block extrahead %}{% endblock %}
+
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                
-                <div class="nav-collapse collapse">
-                    <ul class="nav pull-right" style="margin-top: 7px;">
-                        <li><a href="/">HOME</a></li>
-                        <li>@Html.ActionLink("FEATURES", "Features", "Home")</li>
-                        <li>@Html.ActionLink("PRICING", "Pricing", "Home")</li>
-                        <li>@Html.ActionLink("COMPANY", "Company", "Home")</li>
-                        <li><a href="http://blog.shippable.com/" target="_blank">BLOG</a></li>
-                        <li>@Html.ActionLink("DOCS", "Docs", "Home",null, new { @class = "active" })</li>
-                        <li>@Html.ActionLink("SIGN IN", "githublogin", "auth", new { @id = @Model.GithubIdentityProviderId }, new { @class = "link-button" })</li>
-                    </ul>
-                </div>
+
+<div id="wrap">
+<div class="navbar navbar-static-top navbar-inner navbar-fixed-top ">
+    <div class="navbar-dotcloud">
+        <div class="container">
+
+            <div style="float: right" class="pull-right">
+                <ul class="nav">
+                    <li id="nav-introduction"><a href="https://www.shippable.com/" title="Shippable Homepage">Home</a></li>
+                    <li id="nav-about"><a href="https://www.shippable.com/Features" title="Features">Features</a></li>
+                    <li id="nav-community"><a href="https://www.shippable.com/Pricing" title="Company">Company</a></li>
+                                       
+                </ul>
             </div>
+
+            
         </div>
     </div>
+</div>
 
-<div >
+<div class="container-fluid">
 
-        <div >
-            <div >
+    <!-- Docs nav
+     ================================================== -->
+    <div class="row-fluid main-row">
+
+        <div class="sidebar bs-docs-sidebar">
+            <div class="page-title" >
                 <h4>DOCUMENTATION</h4>
             </div>
             
             {{ toctree(collapse=False, maxdepth=3) }}
-        <form>
-          <input type="text" id="st-search-input" class="st-search-input span3" placeholder="search in documentation" style="width:210px;" />
+	    <form>
+	      <input type="text" id="st-search-input" class="st-search-input span3" placeholder="search in documentation" style="width:210px;" />
           <div id="st-results-container"></div>
-        </form>
+	    </form>
         </div>
 
         <!-- body block -->
-        <div >
+        <div class="main-content">
 
             <!-- Main section
             ================================================== -->
-            <section >
+            <section id="global" class="containerblock">
                 {% block body %}{% endblock %}
             </section>
 
-            </div>
+            <div class="pull-right"><a href="https://github.com/vidyar/Shippable-docs/blob/master/source/{{ pagename }}.rst" title="edit this article">Edit this article on GitHub</a></div>
+        </div>
+    </div>
 </div>
+
+
+
+                        
+            
+<script type="text/javascript" src="{{ pathto('_static/js/docs.js', 1) }}"></script>
+
+
+
+  
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36883558-1']);
+    _gaq.push(['_setDomainName', 'Shippable']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
 </body>
+<!-- starts footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row info">
+            <div class="span6 residence">
+                <ul>
+                    <li>788 110th Ave NE</li>
+                    <li>Bellevue, WA 98004</li>
+                </ul>
+            </div>
+            <div class="credits">
+                <div class="span3 social">
+                    <a href="mailto:support@shippable.com" class="facebook">
+                        <span class="socialicons ico1"></span>
+                        <span class="socialicons_h ico1h"></span>
+                    </a>
+                    <a href="http://www.linkedin.com/company/shippable" class="gplus">
+                        <span class="socialicons ico2"></span>
+                        <span class="socialicons_h ico2h"></span>
+                    </a>
+                    <a href="https://twitter.com/beshippable" class="twitter">
+                        <span class="socialicons ico3"></span>
+                        <span class="socialicons_h ico3h"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row credits">
+            <div class="menu">
+                <a href="#" class="item" id="terms">Terms of Service </a>
+                <a href="#" class="item" id="secure">Security </a>
+                <a href="#" class="item" id="private">Privacy </a>
+            </div>
+            <div class="copyright">
+                &copy 2013 Shippable, Inc. All rights reserved
+            </div>
+        </div>
+    </div>
+    </footer>
+
 </html>

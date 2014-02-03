@@ -19,13 +19,20 @@ import sys, os
 #sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
+html_additional_pages = {
+    'concepts/yml': 'redirect_home.html',
+    'concepts/introduction': 'redirect_home.html',
+    'builder/basics': 'redirect_build.html',
+    }
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sphinxcontrib.httpdomain', 'sphinx.ext.extlinks']
+extlinks = { 'issue': ('https://github.com/vidyar/Shippable-docs/issues/%s',
+	               'Issue ') }
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -35,13 +42,14 @@ source_suffix = '.rst'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
+html_add_permalinks = u'¶'
 
 # The master toctree document.
 master_doc = 'toctree'
 
 # General information about the project.
 project = u'shippable'
-copyright = u'2014, vidya'
+copyright = u'2014, shippable'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -91,7 +99,8 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'agogo'
+html_theme = 'shippable'
+
 # options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -213,8 +222,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'shippable', u'shippable Documentation',
-     [u'vidya'], 1)
+    ('reference/Project/sign_in', 'shippable', u'shippable Documentation',
+     [u'vidya'], 1),
 ]
 
 # If true, show URL addresses after external links.

@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="UxV66EKuPe87dgnH1sbrldrx6VsoWMrx5NjwkgUFxXI" />
+    <title>Reading reports - Shippable Documentation</title>
+    <meta name="description" content="Reading console, test and coverage outputs" />
+    <meta name="keywords" content="console, Tests, Coverage, artifacts, status" />
+    <!-- Swiftype tags: https://swiftype.com/documentation/meta_tags -->
+    <meta property='st:popularity' content='4' />
+    <meta property='st:type' content='docker_doc' />
+      
+    
+
+    <script type="text/javascript">
+        // This is included here for Javascript that doesn't have access to the templates.
+        var doc_version = "";
+        var doc_slug = "";
+    </script>
+
+    
+    <link rel="canonical" href="https://www.shippable.com/en/latest/Project/Reading_reports/">
+    <link rel="stylesheet" href="../_static/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/main.css" type="text/css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="//fonts.googleapis.com/css?family=Cabin:400,700,400italic"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+
+</head>
+
+<body>
+
+<div id="wrap">
+<div class="navbar navbar-static-top navbar-inner navbar-fixed-top ">
+    <div class="navbar-dotcloud">
+        <div class="container">
+
+            <div style="float: right" class="pull-right">
+                <ul class="nav">
+                    <li id="nav-introduction"><a href="https://www.shippable.com/" title="Shippable Homepage">Home</a></li>
+                    <li id="nav-about"><a href="https://www.shippable.com/Features" title="Features">Features</a></li>
+                    <li id="nav-community"><a href="https://www.shippable.com/Pricing" title="Company">Company</a></li>
+                                       
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Docs nav
+     ================================================== -->
+    <div class="row-fluid main-row">
+
+        <div class="sidebar bs-docs-sidebar">
+            <div class="page-title" >
+                <h4>DOCUMENTATION</h4>
+            </div>
+            
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yml_configurations/index.html">configuring yml file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/yml.html">Sample yml file</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/Csharp.html">Csharp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/java.html">Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/ruby.html">Ruby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yml_configurations/scala.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sign_in.html">Signing in</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create_job.html">Create job</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Running_build.html">Running build</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Reading reports :</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setting_job_permissions.html">Setting Job Permissions:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Configuring_Notification_alerts.html">Configuring notification alerts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Configuring_Notification_alerts.html#email-notification">Email notification:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configuring_Notification_alerts.html#campfire-notification">Campfire notification:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Continuous_deployment_to_Heroku.html">Continuous deployment to Heroku:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Services_and_Databases/index.html">Services and Databases:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Services_and_Databases/Databases.html">Databases:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Databases.html#mongodb">MongoDB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Databases.html#mysql">MySQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Databases.html#postgresql">PostgreSQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Databases.html#sqlite3">SQLite3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Services_and_Databases/Services.html">Services:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Services.html#elastic-search">Elastic Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Services.html#memcached">Memcached</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Services_and_Databases/Services.html#redis">Redis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/csharp_buildsample.html">Csharp-buildsample:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Java_buildsample.html">Java-buildsample:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Node.js_buildsample.html">Node.js-buildsample:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Python_buildsample.html">Python-buildsample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Ruby_buildsample.html">Ruby-buildsample:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Scala_buildsample.html">Scala-buildsample:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Reporting_a_Problem.html">Reporting a Problem</a></li>
+</ul>
+
+	    <form>
+	      <input type="text" id="st-search-input" class="st-search-input span3" placeholder="search in documentation" style="width:210px;" />
+          <div id="st-results-container"></div>
+	    </form>
+        </div>
+
+        <!-- body block -->
+        <div class="main-content">
+
+            <!-- Main section
+            ================================================== -->
+            <section id="global" class="containerblock">
+                
+  <div class="section" id="reading-reports">
+<span id="id1"></span><h1>Reading reports :<a class="headerlink" href="#reading-reports" title="Permalink to this headline">¶</a></h1>
+<p>You can see the console output appears on the window as the build proceeds.This log refreshes real time.The status of the build are also available on the window as the build proceeds execution like Queued , In progress , Success ,Failure and Unstable along with the build duration. Once the build finishes execution, the build artifacts are available as a .tar file. You can download this by clicking on the Download artifacts button.</p>
+<img alt="../_images/console.png" src="../_images/console.png" />
+<p>Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed. Then only you are able to check the Test and coverage reports as soon as the build finishes execution.</p>
+<p>Windows worker will only archive the contents of the Shippable folder. So if you want to archive all the files in your repo, then you just need to keep everything in Shippable folder.</p>
+<ul class="simple">
+<li>Test - Testing is an activity to check whether the actual result is matching the expected result.Here you can check number of tests passed or failed in the build by clicking on the Test tab.</li>
+</ul>
+<img alt="../_images/Test.png" src="../_images/Test.png" />
+<ul class="simple">
+<li>Code coverage - To measure what percentage of code has been exercised by a test suite, one or more coverage criteria are used. Here you can check the Sequence coverage and branch coverage for each &amp; every methods in a class ny clicking on the Coverage tab.</li>
+</ul>
+<img alt="../_images/Coverage.png" src="../_images/Coverage.png" />
+<p><strong>Build Trends</strong></p>
+<p>You can also check the Build trends like Build duration, Job health, repository size, file count, Unit test and code coverage in graphs by clicking on the Build trends button as shown in snapshot by an arrow.</p>
+<img alt="../_images/build_trendsbtn.png" src="../_images/build_trendsbtn.png" />
+<ul class="simple">
+<li>Build duration : Graph shows the amount of time taken to run the build. X-axis represents the number of builds and Y-axis represents the time taken run the build.</li>
+<li>Job health : Graph shows the number of builds run on each day. X-axis represents the days (Month and date) and Y-axis represents the number of builds ran.</li>
+</ul>
+<img alt="../_images/Build_trends1.png" src="../_images/Build_trends1.png" />
+<ul class="simple">
+<li>Repository size : Graph shows the size of your repository for each build . X-axis represents the number of builds and Y-axis represents the size of repository .</li>
+<li>File count : Graph shows the number of files in your repository . X-axis represents the number of builds and Y-axis represents the file count.</li>
+</ul>
+<img alt="../_images/Build_trends2.png" src="../_images/Build_trends2.png" />
+<ul class="simple">
+<li>Unit tests : Graph shows the number of tests passed or failed per method in each build. X-axis represents the number of builds and Y-axis represents the test results.</li>
+<li>Code coverage : Graph shows the sequence and branch coverage per method . X-axis represents the number of builds and Y-axis represents the sequence and branch covered per method.</li>
+</ul>
+<img alt="../_images/Build_trends3.png" src="../_images/Build_trends3.png" />
+<ul class="simple">
+<li>Console output and artifacts for previous builds for a job are available by clicking on the View another</li>
+</ul>
+<p>build dropdown in the right pane.</p>
+<img alt="../_images/Buildnumbers.png" src="../_images/Buildnumbers.png" />
+<ul class="simple">
+<li>You can also browse the code on github using View on Github button next to the View another build button.</li>
+</ul>
+</div>
+
+
+            </section>
+
+            <div class="pull-right"><a href="https://github.com/vidyar/Shippable-docs/blob/master/source/Project/Reading_reports.rst" title="edit this article">Edit this article on GitHub</a></div>
+        </div>
+    </div>
+</div>
+
+
+
+                        
+            
+<script type="text/javascript" src="../_static/js/docs.js"></script>
+
+
+
+  
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36883558-1']);
+    _gaq.push(['_setDomainName', 'Shippable']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+<!-- starts footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row info">
+            <div class="span6 residence">
+                <ul>
+                    <li>788 110th Ave NE</li>
+                    <li>Bellevue, WA 98004</li>
+                </ul>
+            </div>
+            <div class="credits">
+                <div class="span3 social">
+                    <a href="mailto:support@shippable.com" class="facebook">
+                        <span class="socialicons ico1"></span>
+                        <span class="socialicons_h ico1h"></span>
+                    </a>
+                    <a href="http://www.linkedin.com/company/shippable" class="gplus">
+                        <span class="socialicons ico2"></span>
+                        <span class="socialicons_h ico2h"></span>
+                    </a>
+                    <a href="https://twitter.com/beshippable" class="twitter">
+                        <span class="socialicons ico3"></span>
+                        <span class="socialicons_h ico3h"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row credits">
+            <div class="menu">
+                <a href="#" class="item" id="terms">Terms of Service </a>
+                <a href="#" class="item" id="secure">Security </a>
+                <a href="#" class="item" id="private">Privacy </a>
+            </div>
+            <div class="copyright">
+                &copy 2013 Shippable, Inc. All rights reserved
+            </div>
+        </div>
+    </div>
+    </footer>
+
+</html>

@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = build
+BUILDDIR      = _build
 PYTHON	      =	python
 
 # Internal variables.
@@ -43,6 +43,24 @@ help:
 	@echo " publish      to publish the app to shippable"	
 clean:
 	-rm -rf $(BUILDDIR)/*
+
+docs:
+	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The documentation pages are now in $(BUILDDIR)/html."
+
+
+server: docs
+	@cd $(BUILDDIR)/html; $(PYTHON) -m SimpleHTTPServer 8000
+
+site:       
+	cp -r website $(BUILDDIR)/
+	cp -r theme/docker/static/ $(BUILDDIR)/website/
+	@echo
+	@echo "The Website pages are in $(BUILDDIR)/site."
+
+$(VERSIONS):
+	@echo "Hello world"
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
