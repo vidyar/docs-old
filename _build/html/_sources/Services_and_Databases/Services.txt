@@ -4,7 +4,7 @@
 
 .. _Services:
 
-Services:
+Services
 ==========
 
 

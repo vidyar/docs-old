@@ -4,7 +4,7 @@
 
 .. _Databases :
 
-Databases:
+Databases
 ==========
 
 MongoDB
