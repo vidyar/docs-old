@@ -50,6 +50,7 @@ The default port value to connect on memcached service is 11211.
 You can also add the version numbers specific to your projects in the yml file. If you are not mentioning it, then by default your build will run against the latest version.
 
 .. code-block:: bash
+
 	services:
   	  - memcached-2.2.3
 

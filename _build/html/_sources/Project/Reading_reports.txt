@@ -47,6 +47,7 @@ You can also check the Build trends like Build duration, Job health, repository 
 
 * Build duration : Graph shows the amount of time taken to run the build. X-axis represents the number of builds and Y-axis represents the time taken run the build.
 
+
 * Job health : Graph shows the number of builds run on each day. X-axis represents the days (Month and date) and Y-axis represents the number of builds ran.
 
 
@@ -74,8 +75,7 @@ You can also check the Build trends like Build duration, Job health, repository 
 
 
 
-* Console output and artifacts for previous builds for a job are available by clicking on the View another 
-build dropdown in the right pane. 
+* Console output and artifacts for previous builds for a job are available by clicking on the View another build dropdown in the right pane. 
 
 
 .. image:: images/Buildnumbers.png
