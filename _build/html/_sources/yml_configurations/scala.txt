@@ -4,7 +4,7 @@
 
 .. _scala:
 
-Scala 
+scala 
 ======
 
 This section helps you to build environment and configuration topics specific to Scala projects.

@@ -1,14 +1,15 @@
 :title: yml configurations
 :description: A brief description on configuring yml file
-:keywords: yml, csharp, java, node.js, python, ruby, scala
+:keywords: yml, configurations
 
 .. _yml_configurations_list:
 
 configuring yml file
 =====================
 
-Here are some examples and description about configuring yml file for different languages
+Here are some examples and description about configuring yml file for different languages.
 
+Contents:
 
 .. toctree::
    :maxdepth: 1
@@ -16,7 +17,7 @@ Here are some examples and description about configuring yml file for different 
    yml
    Csharp
    java
-   node.js
+   nodejs
    python
    ruby
    scala

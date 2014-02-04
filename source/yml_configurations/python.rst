@@ -4,7 +4,7 @@
 
 .. _python:
 
-Python 
+python 
 ===============
 
 This section helps you to build environment and configuration topics specific to Python projects.

@@ -4,8 +4,8 @@
 
 .. _yml:
 
-Sample yml file
-========================
+yml file
+================
 
 
 Our CI environment needs a little information about your project to pick up the type of builds to be executed.The information might be the programming language ,build environment ,version number and the notification alert type.
@@ -55,18 +55,5 @@ Currently we support the following languages.
 5.Ruby
 
 6.Scala
-
-
-.. toctree::
-   :maxdepth: 1
-    
-    yml
-    Csharp
-    Java
-    Node.js
-    Python
-    Ruby
-    Scala
-
 
 

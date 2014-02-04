@@ -2,9 +2,9 @@
 :description: configuring yml file for node_js
 :keywords: node_js, mocha, npm, node
 
-.. _node_js:
+.. _nodejs:
 
-Node.js 
+nodejs 
 ===============
 
 This section helps you to build environment and configuration topics specific to Node.js projects. 

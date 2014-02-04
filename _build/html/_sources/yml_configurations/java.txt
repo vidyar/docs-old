@@ -1,10 +1,10 @@
-:title: Java 
+:title: java 
 :description: How to configure shippable.yml file for java 
 :keywords: yml,java,maven,oraclejdk6,openjdk6,oraclejdk7,openjdk7
 
-.. _Java :
+.. _java :
 
-Java 
+java 
 ======
 This section helps you to create a shippable.yml file for your Java project.
 

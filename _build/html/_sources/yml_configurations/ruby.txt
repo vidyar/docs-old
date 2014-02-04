@@ -4,7 +4,7 @@
 
 .. _ruby:
 
-Ruby
+ruby
 ===============
 
 This section helps you to build environment and configuration topics specific to Ruby projects.
