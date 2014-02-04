@@ -5251,15 +5251,15 @@ input[type="submit"].btn.btn-mini {
   padding: 14px 15px 15px;
   margin-bottom: 0;
   text-align: right;
-  background-color: #333333;
-  border-top: 1px solid #ddd;
-  -webkit-border-radius: 0 0 6px 6px;
+  background-color: #fffff; 
+  border-top: 1px ;
+    -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
   *zoom: 1;
-  -webkit-box-shadow: inset 0 1px 0 #ffffff;
-     -moz-box-shadow: inset 0 1px 0 #ffffff;
-          box-shadow: inset 0 1px 0 #ffffff;
+  -webkit-box-shadow: inset 0 1px 0 #333333;
+     -moz-box-shadow: inset 0 1px 0 #333333;
+          box-shadow: inset 0 1px 0 #333333;
 }
 .modal-footer.copyright {
 color: #97BABA;
