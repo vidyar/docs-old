@@ -51,7 +51,7 @@ p a.btn {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#33333), to(#444444));
   background-image: -webkit-linear-gradient(top, #333333, #444444);
   background-image: -o-linear-gradient(top, #333333, #444444);
-  background-image: linear-gradient(to bottom, #333333, #444444);
+  background-image: linear-gradient(to bottom, #3B4848, #3B4848);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
   border: 1px solid #c7c7c7;
@@ -215,7 +215,7 @@ body {
 .social .flickr,
 .social .youtube,
 .social .reddit {
-  background: url("../img/social/docker_social_logos.png") no-repeat transparent;
+  background: url("../img/social/shippable_social_logos.png") no-repeat transparent;
   display: inline-block;
   height: 32px;
   overflow: hidden;

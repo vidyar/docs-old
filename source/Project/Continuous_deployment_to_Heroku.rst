@@ -4,7 +4,7 @@
  
 .. _Continuous deployment to Heroku:
 
-Continuous deployment to Heroku:
+Continuous deployment to Heroku
 ================================
 
 Heroku supports Ruby, Node.js, Python, so you can use these languages to build and deploy apps on Heroku. You can deploy to your own server by adding the custom after_success: .
