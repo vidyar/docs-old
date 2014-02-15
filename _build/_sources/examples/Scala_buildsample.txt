@@ -7,7 +7,7 @@
 Scala-buildsample
 ===================
   
-A sample repository Scala-buildsample has been created using the testing framework ScalaTest. 
+A sample repository `Scala-buildsample  <https://github.com/Shippable/Scala-buildsample>`_  has been created using the testing framework `ScalaTest <http://scalatest.org/>`_ . 
 Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed and also the test results must be in code> Junit format.
 
 We need the yml file to analyze your project details . So add the shippable.yml file to the root of your repo by specifying :

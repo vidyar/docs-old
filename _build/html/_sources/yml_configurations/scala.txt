@@ -42,4 +42,4 @@ To test against OpenJDK 7 and Oracle JDK 7:
 
 Test command: If your repository root contains project directory or build.sbt file ,then Scala builder will use sbt ++$SHIPPABLE_SCALA_VERSION test to run your test suite.
 
-Please refer the Scala-buildsample example for more details.
+Please refer the :ref:`Scala_buildsample` example for more details.

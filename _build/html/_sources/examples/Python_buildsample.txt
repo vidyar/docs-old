@@ -7,7 +7,7 @@
 Python-buildsample
 ==================== 
 
-A sample repository Python-buildsample has been created using nose and coverage 3.7.
+A sample repository `Python-buildsample <https://github.com/Shippable/Python-buildsample>`_ has been created using `nose <https://pypi.python.org/pypi/nose>`_ and `coverage 3.7  <https://pypi.python.org/pypi/coverage/>`_  .
 Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed and also the test results must be inJunit format.
 
 We need the yml file to analyze the project details . So add the shippable.yml file to the root of your repo by specifying :

@@ -8,7 +8,7 @@ Ruby-buildsample
 ==================
 
 
-A sample repository Ruby-buildsample has been created using simplecov and RSpec .
+A sample repository `Ruby-buildsample <https://github.com/Shippable/Ruby-buildsample>`_  has been created using `simplecov <http://rubydoc.info/gems/simplecov/>`_  and `RSpec <http://rspec.info/>`_  .
 
 We need the yml file to analyze your project details . So add the shippable.yml file to the root of your repo by specifying :
 

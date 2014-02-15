@@ -8,7 +8,7 @@
 Node.js-buildsample
 ======================
 
-A sample repository Node.js-buildsample has been created using the coverage tool istanbul and the testing tool mocha.
+A sample repository `Node.js-buildsample <https://github.com/Shippable/Node.js-buildsample>`_  has been created using the coverage tool `istanbul  <https://npmjs.org/package/istanbul>`_  and the testing tool `mocha  <https://npmjs.org/package/mocha>`_ .
 
 Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed.
 

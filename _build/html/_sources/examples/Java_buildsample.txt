@@ -3,12 +3,12 @@
 :keywords: Java, Language,jdk,script,Notification alerts
 
 
-.. _Java_buidsample :
+.. _Java_buildsample :
 
 Java-buildsample
 ===================
 
-A sample repository Java-buildsample has been created using cobertura and Junit. Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed and the test results must be in Junit format.
+A sample repository `Java-buildsample  <https://github.com/Shippable/Java-buildsample>`_ has been created using `cobertura <http://cobertura.github.io/cobertura/>`_ and `Junit <http://junit.org/>`_ . Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed and the test results must be in Junit format.
 
 We need the yml file to analyze the project details . So add the shippable.yml file to the root of your repo by specifying :
 

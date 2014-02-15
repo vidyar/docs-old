@@ -18,7 +18,7 @@ MongoDB will not start on boot. Add the service to the shippable.yml file to sta
 	services:
  	 - mongodb
 
-You can also refer the example mongodb-buildsample on github for more details.
+You can also refer the example `mongodb-buildsample <https://github.com/Shippable/mongodb-buildsample>`_ on github for more details.
 
 
 MySQL
@@ -34,7 +34,7 @@ Create the myapp_test database first and run it as part of your build script.
   	  - mysql -e 'create database myapp_test;'
                                  
 
-You can also refer the example mysql-buildsample on github for more details.
+You can also refer the example `mysql-buildsample <https://github.com/Shippable/mysql-buildsample>`_  on github for more details.
 
 
 PostgreSQL
@@ -50,13 +50,13 @@ Create the database as part of your build process:
 	  - psql -c 'create database myapp_test;' -U postgres
 
 
-You can also refer the example postgresql-buildsample on github for more details.
+You can also refer the example `postgresql-buildsample <https://github.com/Shippable/postgresql-buildsample>`_ on github for more details.
 
 SQLite3
 ------------
 
 SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. So you can use SQLite, if you do not want to test your code behaviour with other databases.
 
-A sample project has been created using python. You can refer the example sqlite-buildsample on github for more details.
+A sample project has been created using python. You can refer the example `sqlite-buildsample <https://github.com/Shippable/sqlite-buildsample>`_  on github for more details.
 
 

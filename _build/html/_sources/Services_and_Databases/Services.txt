@@ -30,7 +30,7 @@ You can also add the version numbers specific to your projects in the yml file. 
   	  - elasticsearch-0.20.5
 
 
-You can also refer the example Elasticsearch-buildsample on github for more details.
+You can also refer the example `Elasticsearch-buildsample <https://github.com/Shippable/Elasticsearch-buildsample>`_  on github for more details.
 
 Memcached
 ----------
@@ -54,7 +54,7 @@ You can also add the version numbers specific to your projects in the yml file. 
 	services:
   	  - memcached-2.2.3
 
-You can also refer the example Memcache-buildsample on github for more details.
+You can also refer the example `Memcache-buildsample <https://github.com/Shippable/Memcache-buildsample>`_ on github for more details.
 
 
 Redis
@@ -78,4 +78,4 @@ You can also add the version numbers specific to your projects as shown below. I
   	  - redis-2.6.16
 
 
-You can also refer the example Redis-buildsample on github for more details.
+You can also refer the example `Redis-buildsample <https://github.com/Shippable/Redis-buildsample>`_ on github for more details.

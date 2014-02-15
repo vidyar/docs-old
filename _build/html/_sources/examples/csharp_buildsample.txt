@@ -7,7 +7,7 @@
 csharp-buildsample
 =====================
 
-A sample repository csharp-buildsample has been created using Nunitand opencover. Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed.
+A sample repository `csharp-buildsample  <https://github.com/Shippable/csharp-buildsample>`_  has been created using `Nunit <http://nunit.org/>`_  and `opencover <http://www.nuget.org/packages/OpenCover>`_ . Keep the test and code coverage outputs in our special folders called Shippable/testresults and Shippable/codecoverage to get the reports parsed.
 
 We need the yml file to analyze the project details . So add the shippable.yml file to the root of your repo by specifying :
 

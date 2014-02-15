@@ -70,4 +70,4 @@ Few packages are pre-installed in each virtualenv by default to ease running tes
    * nose
    * mock
 
-Please refer the Python -buildsample example for more details.
+Please refer the :ref:`Python_buildsample` example for more details.

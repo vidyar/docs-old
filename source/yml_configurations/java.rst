@@ -68,4 +68,4 @@ Dependency Management: Since there are no standard way to install, You need to s
 	install: ant deps
 
 
-Please refer the Java-buildsample example for more details.
+Please refer the :ref:`Java_buildsample` example for more details.

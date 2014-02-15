@@ -1,6 +1,6 @@
 :title: node_js
 :description: configuring yml file for node_js
-:keywords: node_js, mocha, npm, node
+:keywords: nodejs, mocha, npm, node
 
 .. _nodejs:
 
@@ -62,7 +62,7 @@ To test using Expresso:
 
 Using NPM :
 
-We are using NPM to install your project's dependencies.
+We are using `NPM <http://npmjs.org/>`_ to install your project's dependencies.
 It is possible to override this behavior and there are project that use different tooling but the majority of Node.js projects hosted on Shippable uses NPM, which is also bundled with Node starting with 0.6.0 release.
 
 By default, Our CI will run
@@ -77,5 +77,5 @@ Specify the version numbers and frameworks that you have used to build and run y
 
 Keep the test outputs in shippable/testresults and codecoverage output in shippable/codecoverage folder to get the reports parsed.Otherwise you will not find the reports in our CI.
 
-Please refer the Node.js-buildsample example for more details.
+Please refer the :ref:`Nodejs_buildsample` example for more details.
 

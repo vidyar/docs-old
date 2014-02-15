@@ -41,4 +41,4 @@ Specify the version numbers and frameworks that you have used to build and run y
 
 Keep the test outputs in shippable/testresults and output of codecoverage in shippable/codecoverage folder to get the reports parsed.Otherwise you will not find the reports in our CI.
 
-Please refer the csharp-buildsample example for more details.
+Please refer the :ref:`csharp_buildsample` example for more details.

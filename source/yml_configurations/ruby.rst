@@ -38,7 +38,7 @@ You can specify a custom Gemfile name:
 
 Unless specified, the worker will look for a file named "Gemfile" in the root of your project.
 
-You can also set extra arguments to be passed to bundle install:
+You can also set `extra arguments <http://gembundler.com/v1.3/man/bundle-install.1.html>`_  to be passed to bundle install:
 
 .. code-block:: bash
 
@@ -52,6 +52,6 @@ You can also define a script to be run before 'bundle install':
 	before_install: some_command 
 
 
-Please refer the Ruby-buildsample example for more details.
+Please refer the :ref:`Ruby_buildsample` example for more details.
 
 
