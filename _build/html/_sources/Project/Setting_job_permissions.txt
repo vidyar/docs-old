@@ -8,7 +8,7 @@
 Setting Job Permissions
 ==========================
 
-You can also add your github repository collaborators and allow them to run the build by setting the permissions using Permisssion button which is located at right side of window.
+You can also add your github repository collaborators and allow them to run the build by setting the permissions using Permissions button .
 
 
 .. image:: images/Permissionbtn.png
