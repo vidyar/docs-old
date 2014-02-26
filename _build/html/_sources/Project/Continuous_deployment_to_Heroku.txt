@@ -24,7 +24,7 @@ A Sample deployment configurations to your shippable.yml file is given below .
 .. code-block:: bash
 
 	after_success :
-	git push deploy Git URL
+	  - git push  Git URL
 
 
 You need to copy the Git URL from your project for deployment in heroku .
@@ -45,5 +45,5 @@ An example is given below :
 .. code-block :: bash
 
 	after_success :
-	git push deploy git@heroku.com:shroudd-headland-1758.git
+	  - git push deploy git@heroku.com:shroudd-headland-1758.git
 

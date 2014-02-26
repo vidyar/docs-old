@@ -12,17 +12,16 @@ This documentaion helps you to build and test your projects using Shippable CI.
 Currently we support the following languages.
 
 
-1.csharp
 
-2.Java
+1.Java
 
-3.Node.js
+2.Node.js
 
-4.Python
+3.Python
 
-5.Ruby
+4.Ruby
 
-6.Scala
+5.Scala
 
 
 .. toctree::
